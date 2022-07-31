@@ -48,18 +48,16 @@ programa
 			raizS1 = mat.raiz(x1, 2.0)
 			raizS2 = mat.raiz(x2, 2.0)
 			se(x1 < 0){
-				escreva("x1: Não há raiz para um número menor que 0\n")
+				escreva("x1: Não há raiz para  √",x2,"\n")
 			}senao{
 				escreva("x1: +/- ", raizS1,"\n")
 			}
 
 			se(x2 < 0){
-				escreva("x2: Não há raiz para um número menor que 0\n")
+				escreva("x2: Não há raiz para √",x2,"\n")
 			}senao{
 				escreva("x2: +/- ", raizS2,"\n")
 			}
-			escreva(x1)
-			escreva(x2)
 		}
 	}
 	
@@ -70,7 +68,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1241; 
+ * @POSICAO-CURSOR = 1068; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
