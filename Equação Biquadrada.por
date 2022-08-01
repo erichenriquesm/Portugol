@@ -18,7 +18,7 @@ programa
 		limpa()
 		
 		escreva("(", a, "x²)² ", b,"x² ", c, " = 0\n")	
-		escreva(a, "x² ", b,"x", c, " = 0\n")
+		escreva(a, "x² ", b,"x ", c, " = 0\n")
 		delta = delt(a, b, c)
 		
 		escreva("Delta: ",delta, "\n")
@@ -38,7 +38,8 @@ programa
 		real x1, x2, raizDelt, raizS1, raizS2
 		se(delta == 0){
 			x1 = (-1 * b  + 0)  / (2 * a)
-			escreva("x' E x'' têm o mesmo valor, que é: ", x1)
+			raizS1 = mat.raiz(x1, 2.0)
+			escreva("x' E x'' têm o mesmo valor, que é +/- √ ", x1, " = ", raizS1,"\n")
 		}senao se(delta < 0){
 			escreva("Delta é negativo, logo, não a raiz real!")
 		}senao{
@@ -48,15 +49,15 @@ programa
 			raizS1 = mat.raiz(x1, 2.0)
 			raizS2 = mat.raiz(x2, 2.0)
 			se(x1 < 0){
-				escreva("x1: Não há raiz para  √",x2,"\n")
+				escreva("x1: =/- √",x1,"\n")
 			}senao{
-				escreva("x1: +/- ", raizS1,"\n")
+				escreva("x1: +/- √ ", x1, " = ", raizS1,"\n")
 			}
 
 			se(x2 < 0){
-				escreva("x2: Não há raiz para √",x2,"\n")
+				escreva("x2: +/- √",x2,"\n")
 			}senao{
-				escreva("x2: +/- ", raizS2,"\n")
+				escreva("x2: +/- √ ", x2, " = ", raizS2,"\n")
 			}
 		}
 	}
@@ -68,7 +69,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 1068; 
+ * @POSICAO-CURSOR = 1200; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
